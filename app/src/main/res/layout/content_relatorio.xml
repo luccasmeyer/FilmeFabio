@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".RelatorioActivity"
+    tools:showIn="@layout/activity_relatorio">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Você Deseja:"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Média dos custos de produção."
+        android:id="@+id/cbRelatorioMediaCusto"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade de filmes de cada tipo."
+        android:id="@+id/cbRelatorioTipo"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome, ano de lançamento e gênero do filme mais barato."
+        android:id="@+id/cbRelatorioFilmeBarato"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VERIFICAR"
+        android:id="@+id/bRelatorioVerificar"/>
+
+
+</LinearLayout>

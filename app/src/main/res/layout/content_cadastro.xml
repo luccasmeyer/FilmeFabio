@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".CadastroActivity"
+    tools:showIn="@layout/activity_cadastro">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOME:"
+        android:id="@+id/tvNome"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCadastroNome"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANO DE LANÇAMENTO:"
+        android:id="@+id/tvLancamento"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCadastroLancamento"
+        android:inputType="date"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CUSTO DE PRODUÇÃO:"
+        android:id="@+id/tvCusto"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCadastroCusto"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GÊNERO:"
+        android:id="@+id/tvGenero"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbCadastroComedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comédia" />
+
+        <RadioButton
+            android:id="@+id/rbCadastroFiccao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ficção" />
+
+        <RadioButton
+            android:id="@+id/rbCadastroAventura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aventura" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SALVAR"
+        android:id="@+id/bCadastroSalvar"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CANCELAR"
+        android:id="@+id/bCadastroCancelar"/>
+
+</LinearLayout>
